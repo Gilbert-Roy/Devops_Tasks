@@ -1,0 +1,81 @@
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ nslookup guvi.in
+Non-authoritative answer:
+Server:  dns.google
+Address:  8.8.8.8
+
+Name:    guvi.in
+Addresses:  2606:4700:20::681a:558
+          2606:4700:20::681a:458
+          2606:4700:20::ac43:46cf
+          104.26.5.88
+          104.26.4.88
+          172.67.70.207
+
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ nslookup guvi.in
+Non-authoritative answer:
+Server:  dns.google
+Address:  8.8.8.8
+
+Name:    guvi.in
+Addresses:  2606:4700:20::681a:558
+          2606:4700:20::ac43:46cf
+          2606:4700:20::681a:458
+          104.26.4.88
+          172.67.70.207
+          104.26.5.88
+
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ ping guvi.in
+
+Pinging guvi.in [104.26.4.88] with 32 bytes of data:
+Reply from 104.26.4.88: bytes=32 time=14ms TTL=56
+Reply from 104.26.4.88: bytes=32 time=15ms TTL=56
+Reply from 104.26.4.88: bytes=32 time=15ms TTL=56
+Reply from 104.26.4.88: bytes=32 time=15ms TTL=56
+
+Ping statistics for 104.26.4.88:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 14ms, Maximum = 15ms, Average = 14ms
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ htop
+bash: htop: command not found
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ top
+bash: top: command not found
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ telnet guvi.com 9000
+bash: telnet: command not found
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ telnet guvi.com 9000
+bash: telnet: command not found
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ ping guvi.in
+
+Pinging guvi.in [104.26.4.88] with 32 bytes of data:
+Reply from 104.26.4.88: bytes=32 time=15ms TTL=56
+Reply from 104.26.4.88: bytes=32 time=14ms TTL=56
+Reply from 104.26.4.88: bytes=32 time=16ms TTL=56
+Reply from 104.26.4.88: bytes=32 time=15ms TTL=56
+
+Ping statistics for 104.26.4.88:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 14ms, Maximum = 16ms, Average = 15ms
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ telnet guvi.com 9000
+bash: telnet: command not found
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$

@@ -1,0 +1,79 @@
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ mkdir Git_Walkthrough
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ cs Git_Walkthrough
+bash: cs: command not found
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ cd Git_Walkthrough
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough
+$ ls
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough
+$ touch Git_Test_File
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough
+$ ls
+Git_Test_File
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough
+$ git init
+Initialized empty Git repository in C:/Users/Gilbert Roy/Git_Walkthrough/.git/
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git remote add origin https://github.com/Gilbert-Roy/Devops_Tasks.git
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git remote add origin https://github.com/Gilbert-Roy/Git_Walkthrough.git
+error: remote origin already exists.
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git remote -v
+origin  https://github.com/Gilbert-Roy/Devops_Tasks.git (fetch)
+origin  https://github.com/Gilbert-Roy/Devops_Tasks.git (push)
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git remote set-url origin https://github.com/Gilbert-Roy/Git_Walkthrough.git
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git remote -v
+origin  https://github.com/Gilbert-Roy/Git_Walkthrough.git (fetch)
+origin  https://github.com/Gilbert-Roy/Git_Walkthrough.git (push)
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git add .
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git commit -m "Upload Script file"
+[main (root-commit) e4b178f] Upload Script file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Git_Test_File
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git config --global user.email "gilbertroybecs@gmail.com"
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git config --global user.name "Gilbert Roy P"
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git add .
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git commit -m "Upload Script file"
+On branch main
+nothing to commit, working tree clean
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 228 bytes | 228.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Gilbert-Roy/Git_Walkthrough.git
+ * [new branch]      main -> main
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Git_Walkthrough (main)
+$

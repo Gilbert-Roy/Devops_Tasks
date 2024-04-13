@@ -1,0 +1,24 @@
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ mkdir home
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ cd home
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/home
+$ ls
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/home
+$ touch demo.txt
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/home
+$ ls
+demo.txt
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/home
+$ chmod 764 demo.txt
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/home
+$ ls -l
+total 0
+-rwxr--r-- 1 Gilbert Roy 197121 0 Mar  2 10:12 demo.txt
+

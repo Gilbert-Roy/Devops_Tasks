@@ -1,0 +1,144 @@
+DAY 1:Create 20 files with .txt extensions and rename the first 5 files to .yml extension Print the latest created top 5 files among the total no of files in LINUX commands
+**************************
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ touch report{1..20}.txt
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ ls
+ report1.txt
+ report10.txt
+ report11.txt
+ report12.txt
+ report13.txt
+ report14.txt
+ report15.txt
+ report16.txt
+ report17.txt
+ report18.txt
+ report19.txt
+ report2.txt
+ report20.txt
+ report3.txt
+ report4.txt
+ report5.txt
+ report6.txt
+ report7.txt
+ report8.txt
+ report9.txt
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ mkdir Devops
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~
+$ cd Devops
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Devops
+$ ls
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Devops
+$ touch file{1..20}.txt
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Devops
+$ ls
+file1.txt   file13.txt  file17.txt  file20.txt  file6.txt
+file10.txt  file14.txt  file18.txt  file3.txt   file7.txt
+file11.txt  file15.txt  file19.txt  file4.txt   file8.txt
+file12.txt  file16.txt  file2.txt   file5.txt   file9.txt
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Devops
+$ ls-ltr
+bash: ls-ltr: command not found
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Devops
+$ ls -ltr
+total 0
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file1.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file2.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file3.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file4.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file5.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file6.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file7.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file8.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file9.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file10.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file11.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file12.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file13.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file14.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file15.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file16.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file17.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file18.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file19.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file20.txt
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Devops
+$ for i in {1..5}; do mv file$i.txt file$i.yml; done
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Devops
+$ ls -ltr
+total 0
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file1.yml
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file2.yml
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file3.yml
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file4.yml
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file5.yml
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file6.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file7.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file8.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file9.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file10.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file11.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file12.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file13.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file14.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file15.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file16.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file17.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file18.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file19.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file20.txt
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Devops
+$ ls -lt
+total 0
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file20.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file19.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file18.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file17.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file16.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file15.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file14.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file13.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file12.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file11.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file10.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file9.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file8.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file7.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file6.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file5.yml
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file4.yml
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file3.yml
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file2.yml
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file1.yml
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Devops
+$ ls -lt | head -n 5
+total 0
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file20.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file19.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file18.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file17.txt
+
+Gilbert Roy@Asus-VivoBook MINGW64 ~/Devops
+$ ls -lt | head -n 6
+total 0
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file20.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file19.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file18.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file17.txt
+-rw-r--r-- 1 Gilbert Roy 197121 0 Feb 24 09:55 file16.txt
+
